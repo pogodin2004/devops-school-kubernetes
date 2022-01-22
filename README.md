@@ -59,10 +59,6 @@ kubectl get pod -n kubernetes-dashboard
 ```
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
-   Output:
-   
-![](img/metric_server.png)
-
 ### Update deployment
 ```
 kubectl edit -n kube-system deployment metrics-server
