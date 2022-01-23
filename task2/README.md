@@ -51,16 +51,19 @@ kubectl get pods -o wide
 
    Try connect to pod with `curl` (`curl pod_ip_address`). What happens?
    * From you PC
+   
    Output:
    
 ![](img/curl_pc.png)
 
    * From minikube (`minikube ssh`)
+   
    Output:
    
 ![](img/curl_minikube.png)
 
    * From another pod (`kubectl exec -it $(kubectl get pod |awk '{print $1}'|grep web-|head -n1) bash`)
+   
    Output:
    
 ![](img/curl_another_pod.png)
@@ -90,16 +93,19 @@ kubectl get svc
    Try connect to service (`curl service_ip_address`). What happens?
 
    * From you PC
+   
    Output:
    
-![](img/curl_avc_form_pc.png)
+![](img/curl_svc_form_pc.png)
 
    * From minikube (`minikube ssh`) (run the command several times)
+   
    Output:
    
 ![](img/curl_svc_from_minikube.png)
 
    * From another pod (`kubectl exec -it $(kubectl get pod |awk '{print $1}'|grep web-|head -n1) bash`) (run the command several times)
+   
    Output:
    
 ![](img/curl_svc_from_pod.png)
@@ -117,6 +123,8 @@ kubectl get service
    
 ### Checking the availability of the NodePort service type
 ```
+minikube ip
+curl <minikube_ip>:<nodeport_port>
 ```
    Output:
    
@@ -191,7 +199,7 @@ curl $(minikube ip)
    
    Output:
    
-![](img/hw_1.png)
+![](img/hw_`.png)
 
    Implement Canary deployment of an application via Ingress. Traffic to canary deployment should be redirected if you add "canary:always" in the header, otherwise it should go to regular deployment. Set to redirect a percentage of traffic to canary deployment.
    
