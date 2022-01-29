@@ -51,7 +51,7 @@ kubectl apply -f deployment.yaml
 ```
    Output:
    
-![](img/create_deploy.png)
+![](img/create_deployment.png)
 
 ### Apply svc nodeport
 
