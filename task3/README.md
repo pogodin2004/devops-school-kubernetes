@@ -117,7 +117,7 @@ kubectl get sts
 
    Output:
    
-![](img/welcome_nginx.png)
+![](img/welcome_nginx_1.png)
        
    * Create deploy with emptyDir save data to mountPoint emptyDir, delete pods, check data.
    
