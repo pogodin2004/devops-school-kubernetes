@@ -51,7 +51,7 @@ kubectl apply -f deployment.yaml
 ```
    Output:
    
-![](img/create_deply.png)
+![](img/create_deploy.png)
 
 ### Apply svc nodeport
 
@@ -94,7 +94,7 @@ kubectl get sts
    
    Output:
    
-![](img/inress_minio.png)
+![](img/ingress_minio.png)
 
    Output:
    
