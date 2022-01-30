@@ -191,23 +191,15 @@ kubectl get pod
    
 ![](img/prod_yaml.png)
 
-   Output:
-   
 ![](img/prod_viewer.png)
 
-   Output:
-   
 ![](img/prod_admin.png)
 
    
    * Create a serviceAccount `sa-namespace-admin`. Grant full rights to namespace default. Create context, authorize using the created sa, check accesses.
 
-   Output:
-   
 ![](img/service_account_2.png)
 
-   Output:
-   
 ![](img/service_account_3.png)
 
    
